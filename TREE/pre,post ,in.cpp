@@ -17,8 +17,6 @@ using namespace std;
     n->left= NULL;
     return n;
  }
- 
- 
   void preorder (struct node*root)
   {
   	if(root!=NULL){
@@ -27,8 +25,6 @@ using namespace std;
   	preorder (root->right);
 	  }
   }
-  
-  
    void postorder (struct node*root)
   {
   	if(root!=NULL){
@@ -58,8 +54,7 @@ using namespace std;
  	 p->right=p2;
  	  p1->left=p3;
  	  p1->right=p4;
- 	   
- 	 
+
 cout<<"\nthe preorder traversal is there"<<endl;
  	  preorder(p);
 cout<<"\nthe postorder traversal is there"<<endl;
@@ -69,4 +64,5 @@ cout<<"\nthe inorder traversal is there"<<endl;
  	   printf("&d",isBST(p));
  	 return 0;
  	 
+
  }
